@@ -1,0 +1,13 @@
+colorscheme molokai
+
+" 全角スペースを視覚化
+highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=#666666
+au BufNewfile,Bufread * match ZenkakuSpace /  /
+
+set imdisable
+
+" デフォルトのウインドウサイズの設定
+" 縦幅　デフォルトは24
+set lines=60
+" 横幅　デフォルトは80
+set columns=180
