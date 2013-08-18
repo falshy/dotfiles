@@ -151,9 +151,9 @@ set nocompatible
 filetype off
 
 if has('vim_starting')
- set runtimepath+=~/.vim/neobundle.vim.git
-
- call neobundle#rc(expand('~/.vim/.bundle'))
+ "set runtimepath+=~/.vim/neobundle.vim.git
+ set runtimepath+=~/dotfiles/vimfiles/neobundle.git
+ call neobundle#rc()
 endif
 
 NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
